@@ -1,0 +1,24 @@
+<h1>{{name | append:'?':'-'| uppercase }}</h1><br />
+<h2>{{name}}</h2><br />
+{{date | date:short }}<br />
+<!-- Event Binding and Property Binding -->
+<!-- <input type="text" [value]="name" (click)="onInputChanges($event)"><br /> -->
+<!-- ngModel -->
+ngModel:
+<input *ngIf="name=='sample'" type="text" [(ngModel)]="name"><br />
+
+<div *ngFor="let val of arrayElem">
+  {{val}}
+</div>
+
+<!-- <input type="text" [ngModel]="name" (ngModelChange)="name=$event" /> -->
+
+
+<!-- <button [ngClass]="class" (click)="onSubmit()">Submit</button> -->
+
+<!-- <button [ngStyle]="{backgroundColor: style}" (click)="onSubmit()">SubmitwithStyle</button> -->
+
+<button appDecorate>Submit</button><br />
+<button appDecorate>Submit1</button><br />
+<button appDecorate>Submit2</button><br />
+<button appDecorate>Submit3</button><br />
